@@ -815,8 +815,8 @@ Files: {paths_str}
 # Main Entry Point
 # ---------------------------------------------------------------------------
 
-async def main():
-    """Main entry point for the MCP server"""
+async def async_main():
+    """Async entry point for the MCP server"""
     # Ensure configuration is valid
     if not Config.validate():
         logger.error("Configuration validation failed. Please check your .env file.")
@@ -832,6 +832,11 @@ async def main():
         await app.run(read_stream, write_stream, app.create_initialization_options())
 
 
-if __name__ == "__main__":
+def main():
+    """Main entry point for the MCP server (sync wrapper)"""
     import asyncio
-    asyncio.run(main())
+    asyncio.run(async_main())
+
+
+if __name__ == "__main__":
+    main()
