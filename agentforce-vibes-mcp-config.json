@@ -7,9 +7,9 @@
       "type": "stdio",
       "command": "uvx",
       "args": [
+        "log-analyzer-mcp",
         "--from",
-        "git+https://github.com/suriya-ML/log-checker-mcp.git",
-        "log-analyzer-mcp"
+        "git+https://github.com/suriya-ML/log-checker-mcp.git"
       ]
     }
   }

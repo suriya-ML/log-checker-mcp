@@ -14,9 +14,9 @@ Copy this exact format to add the Log Analyzer MCP server to your Agentforce Vib
       "type": "stdio",
       "command": "uvx",
       "args": [
+        "log-analyzer-mcp",
         "--from",
-        "git+https://github.com/suriya-ML/log-checker-mcp.git",
-        "log-analyzer-mcp"
+        "git+https://github.com/suriya-ML/log-checker-mcp.git"
       ]
     }
   }
@@ -52,9 +52,9 @@ Copy this exact format to add the Log Analyzer MCP server to your Agentforce Vib
       "type": "stdio",
       "command": "uvx",
       "args": [
+        "log-analyzer-mcp",
         "--from",
-        "git+https://github.com/suriya-ML/log-checker-mcp.git",
-        "log-analyzer-mcp"
+        "git+https://github.com/suriya-ML/log-checker-mcp.git"
       ]
     }
   }
@@ -73,9 +73,9 @@ Copy this exact format to add the Log Analyzer MCP server to your Agentforce Vib
       "type": "stdio",
       "command": "uvx",
       "args": [
+        "log-analyzer-mcp",
         "--from",
-        "git+https://github.com/suriya-ML/log-checker-mcp.git",
-        "log-analyzer-mcp"
+        "git+https://github.com/suriya-ML/log-checker-mcp.git"
       ],
       "env": {
         "LOG_FOLDER": "/path/to/your/logs",
