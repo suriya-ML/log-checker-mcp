@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "log-analyzer": {
+      "command": "python",
+      "args": [
+        "-u",
+        "-m",
+        "server"
+      ],
+      "cwd": "c:\\Users\\V0411759\\Documents\\AI TEST\\log-analyzer-mcp",
+      "env": {
+        "PYTHONUNBUFFERED": "1",
+        "PYTHONPATH": "c:\\Users\\V0411759\\Documents\\AI TEST\\log-analyzer-mcp",
+        "LOG_FOLDER": "c:\\Users\\V0411759\\Documents\\AI TEST\\log-analyzer-mcp\\logs"
+      }
+    }
+  }
+}
