@@ -1,0 +1,14 @@
+# Python dependencies for Log Analyzer MCP Server
+
+# Core MCP dependencies
+mcp>=0.9.0
+
+# Text processing and embeddings
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+faiss-cpu>=1.7.4
+torch>=2.0.0
+
+# Utilities
+python-dotenv>=1.0.0
+tqdm>=4.65.0
