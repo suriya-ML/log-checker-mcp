@@ -1,60 +1,33 @@
 # LinkedIn Post: FAISS-Powered Log Analysis MCP for Agentforce Vibes
 
-## 🚀 Revolutionizing Salesforce Log Analysis with AI & Vector Search
+🚀 **Imagine this: Agentforce Vibes + AI-Powered Log Analysis**
 
-I'm excited to share my latest open-source project: **Log Analyzer MCP** - a custom Model Context Protocol server that transforms how we debug Salesforce applications! 🎯
+Picture this workflow:
+→ **Agentforce Vibes** uses Salesforce CLI to fetch all logs from your system
+→ My **custom MCP server** vectorizes and processes 1000+ log files in seconds
+→ You debug issues using **natural language queries**
 
-### 💡 The Problem
-Debugging Salesforce with 1000+ log files is like finding a needle in a haystack. Traditional search is slow, keyword-based, and misses semantic patterns. Developers waste hours manually parsing logs.
+"Show me authentication errors from today"
+"What caused the apex timeout?"
+"Analyze permission failures across all orgs"
 
-### ✨ The Solution
-**Agentforce Vibes + Salesforce CLI + Custom Log Analyzer MCP**
+That's it. No manual log parsing. No grep commands. Just natural language.
 
-Here's the magic workflow:
-1️⃣ **Salesforce CLI MCP** → Fetches all logs from your org automatically
-2️⃣ **Log Analyzer MCP** → Vectorizes 1000+ log files with FAISS (Facebook AI Similarity Search)
-3️⃣ **Natural Language Queries** → Ask questions like "Show me authentication errors in the last 24 hours" or "Debug the apex timeout issue"
+### 🔥 What Makes This Different?
 
-### 🔥 Key Features
-✅ **30-150x faster** than traditional log search
-✅ **100% local processing** - No cloud APIs, zero cost
-✅ **Semantic search** with FAISS vector indexing
-✅ **Intelligent error pattern detection** - Automatic severity ranking
-✅ **Smart caching** - Instant re-indexing with embeddings cache
-✅ **Natural language debugging** - Just ask in plain English!
+✅ **30-150x faster** than traditional keyword search
+✅ **FAISS-powered** semantic vector search
+✅ **100% local** - Zero cloud costs, complete privacy
+✅ **Smart caching** - Instant re-indexing
 
-### 🛠️ Tech Stack
-🔹 **FAISS** (Facebook AI Similarity Search) - Lightning-fast vector similarity search
-🔹 **Sentence Transformers** - Local embeddings (all-MiniLM-L6-v2, 384 dimensions)
-🔹 **Model Context Protocol (MCP)** - Connects AI agents to tools
-🔹 **Python** - Backend processing & orchestration
-🔹 **Agentforce Vibes** - Salesforce's AI agent platform
+### 🌐 Now Open Source!
 
-### 📊 Performance
-⚡ Process 1000+ log files in seconds
-🎯 150 most relevant results per query
-💾 Smart caching for instant re-queries
-🔍 Cosine similarity search with FAISS optimizations
-
-### 🎯 Real-World Use Cases
-🔸 Debug production issues with natural language queries
-🔸 Analyze authentication & permission errors across all orgs
-🔸 Find performance bottlenecks (SOQL, Apex CPU, timeouts)
-🔸 Track error patterns across multiple Salesforce environments
-🔸 Automated log analysis in CI/CD pipelines
-
-### 🌐 Now Available for Everyone!
-
-You can integrate this custom MCP server into **Agentforce Vibes** right now! Just add this configuration:
+Add to your Agentforce Vibes config:
 
 ```json
 {
   "mcpServers": {
     "https://github.com/suriya-ML/log-checker-mcp": {
-      "autoApprove": [],
-      "disabled": false,
-      "timeout": 600,
-      "type": "stdio",
       "command": "uvx",
       "args": [
         "--from",
@@ -68,40 +41,11 @@ You can integrate this custom MCP server into **Agentforce Vibes** right now! Ju
 }
 ```
 
-🔗 **GitHub Repository:** https://github.com/suriya-ML/log-checker-mcp
+🔗 **GitHub:** https://github.com/suriya-ML/log-checker-mcp
 
-### 💪 Why This Matters
-This is the future of DevOps debugging - combining:
-✨ **AI-powered semantic search** instead of keyword matching
-✨ **Vector databases** for instant similarity detection
-✨ **Natural language interfaces** for non-technical stakeholders
-✨ **Open-source** & **extensible** architecture
+This is how AI agents should work - seamlessly connecting tools to solve real problems.
 
-### 🎓 What I Learned
-Building this taught me:
-📌 FAISS optimization strategies (IVFFlat, HNSW, PQ compression)
-📌 Embedding model selection and fine-tuning
-📌 MCP protocol design for AI agent integrations
-📌 Production deployment with uvx and GitHub packages
-📌 Real-world vector search performance tuning
-
-### 🚀 What's Next?
-🔹 Multi-language log support (Java, Node.js, .NET)
-🔹 Real-time log streaming analysis
-🔹 Custom embedding models for domain-specific patterns
-🔹 Integration with Slack/Teams for automated alerts
-🔹 Agentforce native plugin
-
----
-
-### 🤝 Let's Connect!
-Are you working with Salesforce, AI agents, or vector search? I'd love to hear your use cases and feedback!
-
-🔖 **Keywords:** #Salesforce #Agentforce #AI #MachineLearning #VectorSearch #FAISS #MCP #ModelContextProtocol #DevOps #LogAnalysis #SemanticSearch #NaturalLanguageProcessing #NLP #OpenSource #Python #CloudComputing #SalesforceDevs #AIEngineering #VectorDatabase #AgenticAI #SalesforceCLI #DebugTools #DeveloperTools
-
-👉 **Star the repo** if you find this useful!
-👉 **Fork & contribute** - PRs are welcome!
-👉 **Share your thoughts** in the comments!
+#Salesforce #Agentforce #AI #VectorSearch #FAISS #MCP #DevOps #NLP #OpenSource #SalesforceDevs #AIEngineering #SemanticSearch #MachineLearning #DeveloperTools
 
 ---
 
